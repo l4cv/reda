@@ -1,0 +1,309 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #080808;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+}
+
+/*.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+*/
+#products {
+  padding: 50px 0;
+}
+
+.product {
+  margin-bottom: 50px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  display: block;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styles pour les modes clair et sombre */
+body {
+  transition: background-color 0.5s ease;
+  background-color: #000000; /* Mode sombre par défaut */
+  color: #ffffff;
+}
+
+.dark-theme {
+  background-color: #ffffff; /* Mode clair */
+  color: #000000;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/* Styles spécifiques à la section "Contact" */
+#contact h2 {
+  margin-top: -200px; /* Réduit la marge supérieure à zéro */
+}
+
+#contact form label {
+  display: block; /* Affiche les labels comme des blocs pour qu'ils apparaissent sur une nouvelle ligne */
+  margin-bottom: 10px; /* Ajoute un espace entre chaque label */
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%; /* Définit la largeur des champs input et textarea sur 100% de la largeur de leur conteneur */
+  padding: 10px; /* Ajoute un peu d'espace autour du contenu des champs */
+  margin-bottom: 20px; /* Ajoute un espace entre chaque champ */
+}
+
+/* Styles spécifiques à la section "Qui sommes-nous ?" */
+#quisommesnous h3 {
+  margin-top: -200px; /* Réduit la marge supérieure à zéro */
+}
+
+#quisommesnous p {
+  margin-bottom: 10px; /* Ajoute un espace en bas de chaque paragraphe */
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles pour les options de quantité */
+.quantity-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quantity-option {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+.quantity-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.quantity-info p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* acheter et favoris*/
+.product-options1 {
+  margin-top: 20px;
+  width: 250px;
+  background: #003942;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #003942;
+    border-radius: 3px;
+    font-family: "Figtree", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    color: #fff;
+    text-decoration: none;
+    transition: background .2s;
+    padding: 8px 20px;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.product-options2 {
+  margin-top: 20px;
+  width: 250px;
+  background: #003942;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #003942;
+    border-radius: 3px;
+    font-family: "Figtree", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    color: #fff;
+    text-decoration: none;
+    transition: background .2s;
+    padding: 8px 20px;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.selected {
+  border-color: #000000;
+}
+
+
+
+
+
+/* Styles pour la liste déroulante des différents goûts de la whey */
+#flavor {
+  width: 600px; /* Largeur spécifique */
+  height: auto;
+  color: #000000;
+  background-color: #efeeee; /* Couleur de fond personnalisée de la liste déroulante */
+  padding: 10px; /* taille de la barre deroulante*/
+  font-size: 15px;
+}
+
+
+
+/* Styles pour les options de la liste déroulante représentant les arômes de la whey */
+#flavor option {
+  font-size: 15px; /* Taille de police personnalisée */
+  color: #000000; /* Couleur du texte personnalisée */
+}
+.colonne
+{
+  flex-direction: column; /*whey a kg les blocks sont en columns*/
+}

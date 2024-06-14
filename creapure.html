@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey Isolate - MyFit</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="script.js">
+    <style>
+        /* Vos styles CSS existants */
+
+        .product-details {
+            display: flex;
+            align-items: flex-start;
+            margin-top: -230px;
+        }
+
+        .product-details img {
+            width: 40%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: zoom-in;
+            transition: width 0.3s;
+            margin-right: 10px;
+        }
+
+        .product-description {
+            flex: 1;
+            margin-top: 20px;
+        }
+
+        .product-description h2 {
+            margin-bottom: 10px;
+        }
+
+        .product-description p {
+            margin-bottom: 20px;
+        }
+
+        .product-options {
+            flex: 1;
+        }
+
+        .product-options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .product-options select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .product-options button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styles CSS pour la barre de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        
+    </div>
+</section>
+
+<section class="product-details">
+    <img src="image pour code (produits.html)/impact whey isolate.jpg" alt="Whey Isolate" id="product-image">
+    <div class="product-separator"></div>
+    <div class="colonne">
+    <div class="product-description">
+        <h2>Whey Isolate</h2>
+        <p>Arôme:</p>
+        <select name="flavor" id="flavor">
+            <option value="unflavored">Non aromatisé</option>
+            <option value="vanilla">Vanille</option>
+            <option value="chocolate">Chocolat</option>
+            <option value="strawberry">Fraise</option>
+            <option value="banana">Banane</option>
+        </select>
+        <h2 id="product-price">29,99 €</h2>
+    
+    <div class="product-options">
+        <button class="product-options1">Acheter</button>
+        <button class="product-options2">Ajouter aux favoris</button>
+    </div>
+    </div>
+    <div class="quantity-options">
+        <h2>Quantité:</h2>
+        <div class="quantity-option" onclick="selectQuantity(this)">
+            <div class="quantity-info" data-quantity="500g">
+                <p>500 g</p>
+            </div>
+        </div>
+        <div class="quantity-option" onclick="selectQuantity(this)">
+            <div class="quantity-info" data-quantity="1kg">
+                <p>1 kg</p>
+            </div>
+        </div>
+        <div class="quantity-option" onclick="selectQuantity(this)">
+            <div class="quantity-info" data-quantity="2.5kg">
+                <p>2.5 kg</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<div>
+    <p>L’une de nos poudres de protéines les plus pures.</p>
+</div>
+
+<script>
+// Fonction pour zoomer et dézoomer l'image au clic
+document.getElementById('product-image').addEventListener('click', function() {
+    if (this.style.width === '40%') { // Si l'image est à sa taille normale
+        this.style.width = '65%'; // Agrandir l'image
+        this.style.cursor = 'zoom-out'; // Changer le curseur pour indiquer le dézoom
+    } else {
+        this.style.width = '40%'; // Réduire l'image à sa taille normale
+        this.style.cursor = 'zoom-in'; // Changer le curseur pour indiquer le zoom
+    }
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

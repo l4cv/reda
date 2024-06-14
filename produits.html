@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - MyFit</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="script.js">
+    <style>
+
+        .product img {
+            width: 100%;
+            margin-bottom: 5px; /* Réduction de la marge en bas de l'image */
+            margin-top: 10px; /* Suppression de la marge en haut de l'image */
+            transition: transform 0.3s ease-in-out; /* Ajout de la transition */
+        }
+
+        .product img:hover {
+            transform: scale(1.1); /* Effet de zoom au survol */
+        }
+
+        /* Styles CSS pour le contenu des produits */
+        .product {
+            width: 30%;
+            margin: -110px;
+            margin-top: -280px;
+            padding: 0;
+            border: 1px solid #ccc;
+            float: left;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        
+
+        /* Styles CSS pour la barre de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <h1>Produits MyFit</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Rechercher"></li>
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        
+    </div>
+</section>
+
+<section id="products">
+    <div class="container">
+        <div class="product">
+            <a href="creapure.html"><img src="image pour code (produits.html)/impact whey isolate.jpg" alt="Whey Isolate"></a>
+            <h3><a href="creapure.html">Whey Isolate</a></h3>
+            <p>Description de la Whey Isolate...</p>
+        </div>
+        <!-- Ajoutez d'autres produits ici -->
+    </div>
+</section>
+
+<!-- Le reste de votre contenu -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

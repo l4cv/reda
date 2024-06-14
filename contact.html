@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MyFit</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="script.js">
+    <!-- Assurez-vous que les chemins des fichiers CSS et JavaScript sont corrects -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <style>
+        /* Styles CSS pour la barre de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+        
+        /* Styles CSS pour la section "Contact" */
+        #contact {
+            padding: 20px 0;
+        }
+        
+        #contact .container {
+            width: 80%;
+            margin: auto;
+        }
+        
+        #contact h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: -260px;
+        }
+        
+        #contact form {
+            margin-bottom: 20px;
+        }
+        
+        #contact form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #060606;
+            border-radius: 5px;
+        }
+        
+        #contact form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #contact form button:hover {
+            background-color: #45a049;
+        }
+        
+        #contact p {
+            margin-bottom: 10px;
+        }
+        
+        #contact p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        #contact p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <h1>Contactez MyFit</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Rechercher"></li>
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Nous Contacter</h2>
+        <!-- Formulaire de contact -->
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Nom complet" required>
+
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" placeholder="Votre sujet ici" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <!-- Message de confirmation ou lien de retour -->
+        <p>Merci d'avoir contacté notre équipe! Nous vous répondrons dès que possible.</p>
+        <p><a href="index.html">Retour à la page d'accueil</a></p>
+    </div>
+</section>
+
+<!-- Le reste de votre contenu -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

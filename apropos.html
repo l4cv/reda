@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - MyFit</title>
+    <link rel="stylesheet" href="body.css">
+    <script src="script.js"></script>
+    
+    <style>
+        /* Styles CSS pour la barre de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+        
+        /* Styles CSS pour le contenu de la section "À Propos" */
+        #about {
+            padding: 20px 0;
+            margin-top: -280px; /* Déplace la section vers le haut */
+        }
+        
+        #about .container {
+            width: 80%;
+            margin: auto;
+        }
+        
+        #about h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        #about p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <h1>À Propos de MyFit</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Rechercher"></li>
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h3>Qui Sommes-Nous ?</h3>
+        <!-- Contenu sur votre entreprise -->
+        <p>MyFit est votre magasin de musculation en ligne, offrant une large gamme de produits de qualité pour vous aider à atteindre vos objectifs de remise en forme.</p>
+        <p>Notre équipe passionnée est dévouée à fournir les meilleurs produits et un service client exceptionnel à nos clients.</p>
+        <p>Explorez notre sélection de suppléments, équipements d'entraînement et accessoires pour améliorer votre performance et votre bien-être.</p>
+    </div>
+</section>
+
+<!-- Le reste de votre contenu -->
+
+</body>
+</html>

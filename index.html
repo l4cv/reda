@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--Ce qui est affiché sur les onglets-->
+    <title>Accueil - MyFit</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="script.js">
+    
+    <style>
+        /* Barre noire derrière les liens de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <h1>MyFit - Votre Magasin de Musculation en Ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Rechercher"></li>
+                <!--mode sombre , clair switch bouton-->
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        
+    </div>
+</section>
+
+<body>
+    <!--Mode sombre-->
+</body>
+
+<script src="script.js"></script>
+
+</body>
+</html>

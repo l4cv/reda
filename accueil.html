@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--Ce qui est affiché sur les onglets-->
+    <title>Accueil - MyFit</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="body.css">
+    <script src="script.js"></script>
+    
+    
+    <style>
+        /* Styles CSS pour la barre de navigation */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #363637;
+        }
+        
+        header nav ul li {
+            float: left;
+        }
+        
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #111;
+        }
+        
+        /* Styles CSS pour le contenu du footer */
+        footer {
+            background-color: #363637;
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-contact {
+            margin-top: 30px;
+            border-top: 1px solid #888;
+            padding-top: 20px;
+        }
+        
+        .footer-contact div {
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+<header>
+    <div class="container">
+        <h1>MyFit - Votre Magasin de Musculation en Ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Rechercher"></li>
+                <!-- Mode sombre, clair switch bouton -->
+                <li>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="toggle" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="mode-label">Mode Clair</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <!-- Contenu de la section héros -->
+    </div>
+</section>
+
+</body>
+
+<footer>
+  <div class="container">
+      <div class="footer-columns">
+          <!-- Colonne "Nos produits" -->
+          <div class="footer-column">
+              <h3>Nos produits</h3>
+              <ul>
+                  <li>Protéines</li>
+                  <li>Collagènes</li>
+                  <li>Oméga 3</li>
+                  <li>Créatine Creapure®</li>
+                  <li>BCAA</li>
+                  <li>Vitamines</li>
+                  <li>Minéraux</li>
+                  <li>Pre Workout</li>
+                  <li>Prise de masse</li>
+                  <li>Sèche</li>
+                  <li>Récupération musculaire</li>
+              </ul>
+          </div>
+          <!-- Colonne "À propos" -->
+          <div class="footer-column">
+              <h3>À propos</h3>
+              <ul>
+                  <li>Blog</li>
+                  <li>Qui sommes-nous ?</li>
+                  <li>Recrutement</li>
+                  <li>Abonnement</li>
+                  <li>Nos engagements</li>
+                  <li>Partenariats & Affiliation</li>
+                  <li>Glossaire</li>
+                  <li>Nos certifications</li>
+                  <li>Fournisseurs</li>
+                  <li>FAQ</li>
+                  <li>Nos revendeurs</li>
+              </ul>
+          </div>
+          <!-- Colonne "Compte" -->
+          <div class="footer-column">
+              <h3>Compte</h3>
+              <ul>
+                  <li>Se connecter</li>
+                  <li>Espace professionnel</li>
+                  <li>Nous contacter</li>
+                  <li>Programme de fidélité</li>
+                  <li>Parrainage</li>
+                  <li>Suivre ma commande</li>
+                  <li>Retour</li>
+                  <li>Avis</li>
+                  <li>Forum</li>
+              </ul>
+          </div>
+      </div>
+      <hr> <!-- Séparation -->
+      <!-- Informations de contact de MyFit -->
+      <div class="footer-contact">
+          <h3>MyFit</h3>
+          <div>
+              <h4>Chat</h4>
+              <p>Nous répondons à vos questions du lundi au vendredi de 9h à 18h</p>
+          </div>
+          <div>
+              <h4>Email</h4>
+              <p>Écrivez-nous, nous vous répondrons sous 48 h : <a href="mailto:contact@myfit.com">contact@myfit.com</a></p>
+          </div>
+          <div>
+              <h4>Téléphone</h4>
+              <p>00 00 00 00 00 du lundi au vendredi de 9h à 18h</p>
+          </div>
+          <div>
+              <h4>Laissez un avis</h4>
+              <p>Nous adorons recevoir vos commentaires !</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</html>
